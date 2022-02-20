@@ -1,18 +1,131 @@
 body {
-  font-family: "Gideon Roman", cursive;
+  font-family: "Gideon Roman", sans-serif;
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 /* header section start */
+.container {
+  width: 1430px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+.header,
+.hero {
+  background: linear-gradient(
+    180deg,
+    rgba(9, 5, 31, 0.7) 0%,
+    rgba(0, 0, 0, 0) 136.32%
+  );
+  opacity: 0.8;
+  background-color: #0c0c0c;
+}
 
 /* main nav start */
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav a:last-child {
+  margin-left: 36px;
+  margin-right: auto;
+}
+.burger {
+  fill: #fff;
+}
 /* main nav end */
-
+.header-menu > a {
+  display: inline-block;
+  margin-left: 537px;
+  margin-right: auto;
+}
 /* authorization nav start */
+.auth-nav a {
+  font-family: Gideon Roman;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 1.23;
+  letter-spacing: 0.2em;
+  color: white;
+  text-decoration: none;
+}
+.auth-nav a:last-child {
+  margin-left: 60px;
+}
 /* authorization nav end */
 
 /* header section end */
 
 /* hero section start */
+.main-title {
+  margin: 0;
+  padding-top: 120px;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 1.2;
+  color: #fff;
+}
+.section-title {
+  font-weight: normal;
+  font-size: 140px;
+  line-height: 168px;
+  color: #ffffff;
+}
+.section-subtitle {
+  font-weight: normal;
+  font-size: 110px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+.hero-text {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 0.92;
+  color: #ffffff;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  height: 1000px;
+}
+.hero::before {
+  content: "";
+  background: linear-gradient(
+    180deg,
+    rgba(9, 5, 31, 0.7) 0%,
+    rgba(0, 0, 0, 0) 136.32%
+  );
+  opacity: 0.8;
+  position: absolute;
+  background-image: url(../img/svg/Moon-Image.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  fill: #0c0c0c;
+  outline: 2px solid tomato;
+
+  z-index: -1;
+}
 /* hero section end */
 
 /* section flight experience start */
