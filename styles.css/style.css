@@ -31,11 +31,10 @@ ul {
       rgba(9, 5, 31, 0.8) 0%,
       rgba(0, 0, 0, 0.8) 136.32%
     ),
-    url(../img/Mars.png), url(../img/svg/Moon-Image.svg);
-  background-color: #0c0c0c;
+    url(../img/svg/Moon-Image.svg);
   background-repeat: no-repeat;
-  background-size: 1900px, 300px, 1400px;
-  background-position: center, right bottom 100px, left 200px top 50px;
+  background-size: contain, cover;
+  background-position: top left, top;
 }
 
 /* main nav start */
@@ -50,6 +49,7 @@ ul {
 .nav a:last-child {
   margin-left: 36px;
   margin-right: auto;
+  margin-bottom: 136px;
 }
 .burger {
   fill: #fff;
@@ -79,8 +79,11 @@ ul {
 /* header section end */
 
 /* hero section start */
+.hero {
+  position: relative;
+}
 .main-title {
-  margin: 0;
+  margin-bottom: 191px;
   padding-top: 120px;
   font-weight: normal;
   font-size: 25px;
@@ -93,7 +96,12 @@ ul {
   line-height: 168px;
   color: #ffffff;
 }
+hero > .section-title {
+  margin-bottom: 5px;
+}
 .section-subtitle {
+  position: absolute;
+  top: ;
   font-weight: normal;
   font-size: 110px;
   line-height: 1.2;
